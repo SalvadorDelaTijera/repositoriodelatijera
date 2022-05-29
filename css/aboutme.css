@@ -158,4 +158,10 @@ header, nav, main {
     #acerca {
         grid-template-columns: 1fr;
     }
+    .face {
+        height: 10px;
+    }
+    .insta {
+        height: 10px;
+    }
 }

@@ -151,4 +151,10 @@ header, nav, main, footer {
     footer {
         margin-top: 250px;
     }
+    .face {
+        height: 10px;
+    }
+    .insta {
+        height: 10px;
+    }
 }

@@ -133,5 +133,11 @@ header, nav, main, footer {
     nav ul li {
         padding: 0px 20px 5px 20px;
     }
+    .face {
+        height: 10px;
+    }
+    .insta {
+        height: 10px;
+    }
     
 }
