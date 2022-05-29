@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+/*-----------------GRID------------- */
+#grid {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-areas: 
+        "logo menu menu"
+        "contact contact contact"
+        "pie pie pie";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto;
+}
+
+/*--------------- MENU NAVEGADOR-------------- */
+header{ 
+    background: rgb(0, 0, 0);
+    grid-area: logo;
+    position: static;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header img{ /* ---------LOGO salvadordelatijera------------ */
+    height: 70px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+/* ----------------PESTAÑAS MENU----------------- */
+nav{ 
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: menu;
+    background: rgb(0, 0, 0);
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+ nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    font-size: large;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px 5px 20px;
+    align-items: center;
+} /* -------------------ICONOS RS------------------- */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    align-content: space-between;
+    align-items: center;
+}  
+/* ----------------------------CONTACTO------------------------------ */
+
+main{
+    justify-content: center;
+    align-items: center;
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#contacto {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    width: 460px; 
+    margin-top: 30px;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: rgb(29, 33, 44); 
+    padding-left: 30px; 
+    justify-content: center;
+    align-items: center;
+    
+}
+input {
+    background-color: #fbfbfb; 
+    width: 400px; 
+     height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+/* --------------------------FOOTER---------------------------- */
+footer{
+    grid-area: pie;
+    background: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    color: grey;
+    font-size: small;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+}
+p a {
+    text-decoration: none;
+    color: grey;
+    align-items: center; 
+}
+
+header, nav, main, footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------RESPONSIVE--------------------------------------- */
+@media (min-width: 375px) and (max-width: 600px) {
+    #grid {
+        grid-template-rows: 50px auto auto;
+    }
+    header img { 
+        height: 50px;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    nav {
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    nav ul {
+        font-size: small;
+    }
+    nav ul li {
+        padding: 0px 20px 5px 20px;
+    }
+    
+}
