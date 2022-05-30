@@ -89,6 +89,17 @@ main div{
     height: 200px;
     width: auto;
     padding: 5px;
+    transform: scale(1,1);
+}
+.pics img:hover {
+    transform: scale(2,2) translate(-6%, 10%);
+    transition: 1s;
+    z-index: 100;
+    top: 50%;
+    right: 50%;
+    
+
+    
 }
 /* --------------------------FOOTER---------------------------- */
 footer{
@@ -140,5 +151,6 @@ header, nav, main, footer {
     .insta {
         height: 10px;
     }
+
     
 }

@@ -93,6 +93,7 @@ main{
     padding-left: 30px; 
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
     
 }
 input {
@@ -117,7 +118,7 @@ footer{
     align-items: center;
     justify-content: center;
     /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
-    background-image: linear-gradient( black, black, black,rgb(58, 58, 58));
+    background-image: linear-gradient( black,rgb(0, 3, 52));
 }
 p a {
     text-decoration: none;
@@ -170,10 +171,9 @@ header, nav, main, footer {
     background-color: rgb(29, 33, 44); 
     padding-left: 15px; 
     justify-content: center;
-    align-items: center;
-    
-}
-input {
+    align-items: center;   
+    }
+    input {
     background-color: #fbfbfb; 
     width: 200px; 
      height: 20px; 
@@ -184,5 +184,5 @@ input {
     margin-top: 5px;  
     padding-left: 5px;
     margin-bottom: 10px; 
-}
+    }
 }
