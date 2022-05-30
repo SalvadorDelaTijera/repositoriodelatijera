@@ -128,7 +128,7 @@ header, nav, main, footer {
 /* --------------------------------------------RESPONSIVE------------------------------------------------ */
 @media (min-width: 300px) and (max-width: 500px) {
     #grid {
-        grid-template-rows: 50px auto auto;
+        grid-template-rows: 100px auto auto;
     }
     header img { 
         height: 50px;
