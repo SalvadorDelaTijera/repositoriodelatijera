@@ -110,13 +110,14 @@ input {
 /* --------------------------FOOTER---------------------------- */
 footer{
     grid-area: pie;
-    background: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
     color: grey;
     font-size: small;
     font-style: italic;
     align-items: center;
     justify-content: center;
+    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
+    background-image: linear-gradient( black, black, black,rgb(58, 58, 58));
 }
 p a {
     text-decoration: none;

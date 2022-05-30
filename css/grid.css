@@ -92,7 +92,6 @@ main div{
 }
 /* ---------------------FOOTER-------------------- */
 footer {
-    background: rgb(0, 0, 0);
     grid-area: footer;
     color: grey;
     font-size: small;
@@ -101,6 +100,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
+    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
+    background-image: linear-gradient( black, black, black,rgb(58, 58, 58));
 }
 
 p a {

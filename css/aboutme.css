@@ -91,9 +91,9 @@ main{
     text-align: justify;
 }
 
-.salva h2{
+.salva h3{
     font-family: 'Whisper', cursive;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 main p{
@@ -113,15 +113,17 @@ main p{
 /* --------------------------FOOTER---------------------------- */
 footer{
     grid-area: pie;
-    background: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
-    color: grey;
+    color: rgb(23, 23, 23);
     display: flex;
     font-size: small;
     font-style: italic;
     align-items: flex-end;
     justify-content: center;
     height: 100%;
+    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
+    background-image: linear-gradient( black, black, black,rgb(58, 58, 58)); 
+
 }
 p a {
     text-decoration: none;
@@ -164,4 +166,7 @@ header, nav, main {
     .insta {
         height: 10px;
     }
+}
+/* -------------------ANIMACIONES Y EFECTOS---------------------------- */ 
+@keyframes degradado {
 }
