@@ -7,17 +7,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 /*-----------------GRID------------- */
-#grid {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-areas: 
-        "logo menu menu"
-        "contact contact contact"
-        "pie pie pie";
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px auto auto;
-}
+
 
 /*--------------- MENU NAVEGADOR-------------- */
 header{ 
