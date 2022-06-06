@@ -1,161 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-body {
-    background-color: rgb(0, 0, 0);
-}
-/*-----------------GRID------------- */
-#grid {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-areas: 
-        "logo menu menu"
-        "costos costos costos"
-        "pie pie pie";
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px auto auto;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: 0;
 }
 
-/*--------------- MENU NAVEGADOR-------------- */
-header{ 
-    background: rgb(0, 0, 0);
-    grid-area: logo;
-    position: static;
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+/* ----------Pestañas menu----------- */
+.navbar {
+  font-family: "Ubuntu", sans-serif;
+  background: rgb(0, 0, 0);
+  font-style: italic;
+  font-size: medium;
+}
+.navbar ul li {
+  text-decoration: none;
+  padding: 10px 5px 10px 20px;
+}
+.navbar ul li a {
+  /* -------iconos redes sociales------- */
+  text-decoration: none;
 }
 
-header img{ /* ---------LOGO salvadordelatijera------------ */
-    height: 70px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 10px;
-    margin-top: 20px;
-    align-items: center;
-}
-/* ----------------PESTAÑAS MENU----------------- */
-nav{ 
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Ubuntu', sans-serif;
-    grid-area: menu;
-    background: rgb(0, 0, 0);
-    justify-content: space-between;
-    padding-top: 20px;
-
-}
- nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    font-style: italic;
-    font-size: large;
-    align-items: center;
-}
-nav ul li {
-    list-style: none;
-    text-decoration: none;
-    padding: 0px 20px 5px 20px;
-    align-items: center;
-} 
-/* -------------------ICONOS RS------------------- */
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    align-content: space-between;
-    align-items: center;
-}  
 /* ----------------------------------costos----------------------- */
-
-main{
-    grid-area: costos;
-}
-
 #costos {
-    color: white;
-    font-family: 'Ubuntu', sans-serif; 
-    display: flex;
-    display: grid;
-    gap: 70px;
-    grid-template-columns: 1fr 1fr 1fr; 
-    padding: 30px;
-    margin: 0 auto;
-    max-width: 1000px;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 40px;
 }
-/* ---------------------tipos de sesiones------------------- */
-.standar {
-    line-height: 40px;
+#costos .standar {
+  /* ------------------ standar ------------- */
+  margin: 10px 2rem;
+  padding: 45px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#costos .standar h3 {
+  /* -----------cabeza---------- */
+  color: rgb(186, 203, 213);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+#costos .standar h6 {
+  /* ------------texto---------- */
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(186, 203, 213);
+  text-align: justify;
+  text-align: center;
+  line-height: 50px;
+}
+#costos .plus {
+  /* ------------------ plus ------------- */
+  margin: 10px 2rem;
+  padding: 45px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#costos .plus h3 {
+  /* -----------cabeza---------- */
+  color: rgb(186, 203, 213);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+#costos .plus h6 {
+  /* ------------texto---------- */
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(186, 203, 213);
+  text-align: justify;
+  text-align: center;
+  line-height: 50px;
+}
+#costos .premium {
+  /* ------------------ premium ------------- */
+  margin: 10px 2rem;
+  padding: 45px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#costos .premium h3 {
+  /* -----------cabeza---------- */
+  color: rgb(186, 203, 213);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+#costos .premium h6 {
+  /* ------------texto---------- */
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(186, 203, 213);
+  text-align: justify;
+  text-align: center;
+  line-height: 50px;
+}
 
-}
-.plus {
-    line-height: 40px;
-
-}
-.premium {
-    line-height: 40px;
-    
-}
 /* --------------------------FOOTER---------------------------- */
-footer{
-    grid-area: pie;
-    font-family: 'Ubuntu', sans-serif;
-    color: grey;
-    font-size: small;
-    font-style: italic;
-    align-items: center;
-    justify-content: center;
-    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
-    background-image: linear-gradient( black, black, black,rgb(58, 58, 58));
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  color: grey;
+  font-size: medium;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
+  background-image: linear-gradient(black, rgb(20, 28, 48));
 }
-p a {
-    text-decoration: none;
-    color: grey;
-    align-items: center; 
-}
-
-header, nav, main, footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.footer p a {
+  text-decoration: none;
+  color: grey;
+  align-items: center;
 }
 
 /* ---------------------------RESPONSIVE--------------------------------------- */
-@media (min-width: 300px) and (max-width: 500px) {
-    #grid {
-        grid-template-rows: 50px auto auto;
-    }
-    header img { 
-        height: 50px;
-        padding-left: 5px;
-        margin-top: 10px;
-    }
-    nav {
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    nav ul {
-        font-size: small;
-    }
-    nav ul li {
-        padding: 0px 20px 5px 20px;
-    }
-    #costos {
-        grid-template-columns: 1fr ; 
-    }
-
-    footer {
-        margin-top: 250px;
-    }
-    .face {
-        height: 10px;
-    }
-    .insta {
-        height: 10px;
-    }
-}
+@media (min-width: 300px) and (max-width: 800px) {
+  #costos {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=costos.css.map */

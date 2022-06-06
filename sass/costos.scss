@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: 0;
+    
+}
+
+/* ----------Pestañas menu----------- */
+
+.navbar {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: medium;
+
+    ul li {
+        text-decoration: none;
+        padding: 10px 5px 10px 20px;
+
+        a {  /* -------iconos redes sociales------- */
+            text-decoration: none;
+           
+        } 
+    } 
+}
+/* ----------------------------------costos----------------------- */
+
+#costos {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 40px;
+
+    .standar { /* ------------------ standar ------------- */
+        margin: 10px 2rem;
+        padding: 45px 0px 0px 0px;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 19px );
+        -webkit-backdrop-filter: blur( 19px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        h3 { /* -----------cabeza---------- */
+            color: rgb(186, 203, 213);
+            font-family: 'Ubuntu', sans-serif; 
+            text-align: center;
+            line-height: 40px;
+        }
+        h6 { /* ------------texto---------- */
+            font-family: 'Ubuntu', sans-serif; 
+            color: rgb(186, 203, 213);
+            text-align: justify;
+            text-align: center;
+            line-height: 50px;
+    
+        }
+    
+    }
+    .plus {  /* ------------------ plus ------------- */
+        margin: 10px 2rem;
+        padding: 45px 0px 0px 0px;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 19px );
+        -webkit-backdrop-filter: blur( 19px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        h3 { /* -----------cabeza---------- */
+            color: rgb(186, 203, 213);
+            font-family: 'Ubuntu', sans-serif; 
+            text-align: center;
+            line-height: 40px;
+        }
+        h6 { /* ------------texto---------- */
+            font-family: 'Ubuntu', sans-serif; 
+            color: rgb(186, 203, 213);
+            text-align: justify;
+            text-align: center;
+            line-height: 50px;
+    
+        }
+    
+    }
+    .premium { /* ------------------ premium ------------- */
+        margin: 10px 2rem;
+        padding: 45px 0px 0px 0px;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 19px );
+        -webkit-backdrop-filter: blur( 19px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        h3 { /* -----------cabeza---------- */
+            color: rgb(186, 203, 213);
+            font-family: 'Ubuntu', sans-serif; 
+            text-align: center;
+            line-height: 40px;
+        }
+        h6 { /* ------------texto---------- */
+            font-family: 'Ubuntu', sans-serif; 
+            color: rgb(186, 203, 213);
+            text-align: justify;
+            text-align: center;
+            line-height: 50px;
+    
+        }
+        
+    }
+}
+
+/* --------------------------FOOTER---------------------------- */
+.footer{
+    font-family: 'Ubuntu', sans-serif;
+    color: grey;
+    font-size: medium;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
+    background-image: linear-gradient( black, rgb(20, 28, 48));
+    p a {
+        text-decoration: none;
+        color: grey;
+        align-items: center; 
+    }
+}
+
+/* ---------------------------RESPONSIVE--------------------------------------- */
+@media (min-width: 300px) and (max-width: 800px) {
+
+    #costos {
+        grid-template-columns: 1fr;
+
+    }
+   
+}
+   
