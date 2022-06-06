@@ -134,4 +134,8 @@
   #costos {
     grid-template-columns: 1fr;
   }
+
+  .navbar {
+    font-size: small;
+  }
 }/*# sourceMappingURL=costos.css.map */

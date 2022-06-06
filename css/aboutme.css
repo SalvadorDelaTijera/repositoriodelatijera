@@ -83,12 +83,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  nav ul {
+  .navbar {
     font-size: small;
-  }
-
-  li {
-    padding: 5px 10px 3px 200px;
   }
 }
 /* -------------------ANIMACIONES Y EFECTOS---------------------------- */
