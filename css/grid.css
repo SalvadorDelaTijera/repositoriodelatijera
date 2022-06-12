@@ -18,13 +18,12 @@ nav ul {
 }
 nav ul li {
     text-decoration: none;
-    padding: 10px 5px 10px 20px;
+    padding: 10px;
 }
 /* -------icinos redes sociales------- */
 nav ul li a { 
     text-decoration: none;
     color: white;
-    align-content: space-between;
     align-items: center;
 }
 /* --------------------MAIN DE HOME------------------- */

@@ -10,18 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&family=Whisper&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../logo/STlogo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/portafolio.css">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- ----------------------BOOTSTRAP----------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/contacto.css">
 </head>
 
 <body>
    <!-- ----------------------BOOTSTRAP------------------- -->
-        <!-- ------------menu navegador---------------- -->
-        <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav">
+         <!-- ------------menu navegador---------------- -->
+         <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav">
             <div class="container-fluid bg-black">
                 <a class="navbar-brand" href="../index.html"><img src="../logo/slvadordeltijerafirmblanco.png" alt="logoblanco" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +34,8 @@
                         <li class="nav-item"><a class="nav-link" href="./aboutme.html">Bio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="./costos.html">Costos</a></li>
-                        <li><a href="https://www.facebook.com/salvadordelatijerafotografo/"><img src="../ social media/face.png" alt="logo facebook" height="20px"></a>
-                        <li> <a href="https://www.instagram.com/salvadordelatijera/"><img src="../ social media/insta.png" alt="logo instagram" height="20px"></a>
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/salvadordelatijerafotografo/"><img src="../ social media/face.png" alt="logo facebook" height="18px"></a>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/salvadordelatijera/"><img src="../ social media/insta.png" alt="logo instagram" height="18px"></a>
                     </ul>
                 </div>
             </div> 
@@ -46,33 +45,33 @@
             <section class="page-section" id="contact">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Gracias por ponerte en contacto conmigo</h2>
-                        <h3 class="section-subheading text-muted">No olvides llenar ls .</h3>
+                        <h4 class="section-heading text-uppercase">Gracias por ponerte en contacto conmigo</h4>
+                        <h5 class="section-subheading text-muted">No olvides llenar todos los campos.</h5>
                     </div>
                   
                     <form id="contactForm" data-sb-form-api-token="contac">
                         <div class="row align-items-stretch mb-5">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <!-- Name input-->
+    
                                     <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
+
                                 <div class="form-group">
-                                    <!-- Email address input-->
                                     <input class="form-control" id="email" type="email" placeholder="email *" data-sb-validations="required,email" />
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
                                 <div class="form-group mb-md-0">
-                                    <!-- Phone number input-->
+                                  
                                     <input class="form-control" id="phone" type="tel" placeholder="Telefono *" data-sb-validations="required" />
                                     <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-group-textarea mb-md-0">
-                                    <!-- Message input-->
+                                    
                                     <textarea class="form-control" id="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>

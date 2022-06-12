@@ -15,14 +15,12 @@
 
     ul li {
         text-decoration: none;
-        padding: 10px 5px 10px 20px;
-
-        a {  /* -------iconos redes sociales------- */
-            text-decoration: none;
-           
-        } 
+        padding: 10px;
+        align-content: center;  
     } 
+
 }
+
 /* ----------------------------------costos----------------------- */
 
 #costos {
@@ -120,7 +118,7 @@
 .footer{
     font-family: 'Ubuntu', sans-serif;
     color: grey;
-    font-size: medium;
+    font-size: small;
     font-style: italic;
     align-items: center;
     justify-content: center;
