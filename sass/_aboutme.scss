@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: 0;
+    
+}
+ /* -------------------BIO salvadordelatijera---------------- */
+ #acerca {
+    background: rgb(0, 0, 0);
+    align-items: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .salva {
+        animation: transform 4s;
+       
+        h3{
+            font-family: 'Whisper', cursive;
+            font-size: 40px;
+            text-align: center;   
+        }
+        
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            vertical-align: middle;
+            text-align: center;
+            padding-left: 10px;
+        }
+    }
+    .fotoyo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        img {
+            max-width: 450px;
+            animation: transform 9s;
+        }
+    
+    }
+
+    
+}

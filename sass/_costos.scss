@@ -5,23 +5,7 @@
     
 }
 
-/* ----------Pestañas menu----------- */
-
-.navbar {
-    font-family: 'Ubuntu', sans-serif;
-    background: rgb(0, 0, 0);
-    font-style: italic;
-    font-size: medium;
-
-    ul li {
-        text-decoration: none;
-        padding: 10px;
-        align-content: center;  
-    } 
-
-}
-
-/* ----------------------------------costos----------------------- */
+/* ----------------------------------COSTOS----------------------- */
 
 #costos {
     background-color: black;
@@ -113,36 +97,3 @@
         
     }
 }
-
-/* --------------------------FOOTER---------------------------- */
-.footer{
-    font-family: 'Ubuntu', sans-serif;
-    color: grey;
-    font-size: small;
-    font-style: italic;
-    align-items: center;
-    justify-content: center;
-    /* -----------------EFECTO DEGRADADO AL FOOTER------------- */
-    background-image: linear-gradient( black, rgb(20, 28, 48));
-    p a {
-        text-decoration: none;
-        color: grey;
-        align-items: center; 
-    }
-}
-
-/* ---------------------------RESPONSIVE--------------------------------------- */
-@media (min-width: 300px) and (max-width: 800px) {
-
-    #costos {
-        grid-template-columns: 1fr;
-
-    }
-    .navbar {
-        font-size: small;
-    }
-    
-
-   
-}
-   
