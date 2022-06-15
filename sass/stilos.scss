@@ -6,54 +6,124 @@
 }
 
 @import "home";
+
 @import "portafolio";
+
 @import "aboutme";
+
 @import "contacto";
+
 @import "costos";
+
+@import "vars";
 
 
 
 
 /* ----------Pestañas MENU----------- */
 body {
-	background-color: black;
+	background-color: map-get($map: $color, $key: colorPrincipal);
 }
 .navbar {
 	font-family: "Ubuntu", sans-serif;
-	background: rgb(0, 0, 0);
+	background: map-get($map: $color, $key: colorPrincipal);
 	font-style: italic;
-	font-size: medium;
+	font-size: small;
 	ul {
 		li {
 			text-decoration: none;
-			padding: 10px;
+			padding: 5px;
 			align-content: center;
 		}
 	}
 }
 /* --------------------------FOOTER---------------------------- */
 .footer {
-	font-family: "Ubuntu", sans-serif;
-	color: grey;
+	font-family: 'Noto Sans', sans-serif;
+	color: map-get($map: $color, $key: colorTextoP);
 	font-size: small;
 	font-style: italic;
 	align-items: center;
 	justify-content: center;
 	background-image: linear-gradient(black, rgb(20, 28, 48));
-	p {
-		a {
-			text-decoration: none;
-			color: grey;
-			align-items: center;
+	margin-top: 50px;
+	#redesFooter {
+		margin: 0 auto;
+	}
+	a {
+		text-decoration: none;
+		color: map-get($map: $color, $key: colorTextoS);
+		align-items: center;
+	}
+	.footerplus {
+		align-items: center;
+		ul{
+			display: flex;
+			flex-direction: row;
+			margin-left: 40 px;
+			margin-right: 40 px;
+			justify-content: center;
+			gap: 40px;
+			li{
+				list-style: none;
+				a{
+					text-decoration: none;
+					color: map-get($map: $color, $key: colorTextoP);
+				}
+			}
 		}
+
 	}
 }
 /* ---------------------------RESPONSIVE--------------------------------------- */
 @media (min-width: 300px) and (max-width: 800px) {
-	#costos {
-		grid-template-columns: 1fr;
-	}
+
 	.navbar {
 		font-size: small;
 	}
+
+/* ------GALERIA------- */
+
+	.img-fluid {
+		&:hover {
+			transform: none;
+		}
+	}
+
+/* ------ABOUTME----- */
+
+	#acerca {
+        grid-template-columns: 1fr;
+        p{
+            margin: 10px;
+        }
+    }
+
+/* ------CONTACTO----- */
+
+	.contactanos{
+		display: grid;
+		grid-template-areas: "form" 
+							 "datos";
+		#contact {
+			grid-area: form;
+		}
+		.datosContac {
+			grid-area: datos;
+		}
+		.redes {
+			display: none;
+	
+			
+		}
+	}
+/* ------COSTOS----- */
+
+	#costos {
+		grid-template-columns: 1fr;
+	}
+
+
+	
 }
+

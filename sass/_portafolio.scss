@@ -1,7 +1,7 @@
-
+@import 'vars';
 /* ------------------PORTAFOLIO--------------  */
 main {
-	background: rgb(0, 0, 0);
+	background: map-get($map: $color, $key: colorPrincipal);
 }
 .img-fluid {
 	&:hover {

@@ -5,14 +5,26 @@
   box-sizing: 0;
 }
 
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* --------------------HOME-------------------- */
-.fotosHome {
-  width: 100%;
+body {
+  background-color: #000000;
 }
 
+.slide {
+  width: 100%;
+  margin-top: 5px;
+}
+.slide img {
+  max-width: 100%;
+}
+
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* ------------------PORTAFOLIO--------------  */
 main {
-  background: rgb(0, 0, 0);
+  background: #000000;
 }
 
 .img-fluid:hover {
@@ -23,15 +35,11 @@ main {
   right: 10%;
 }
 
-* {
-  margin: 0;
-  padding: 0%;
-  box-sizing: 0;
-}
-
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* -------------------BIO salvadordelatijera---------------- */
 #acerca {
-  background: rgb(0, 0, 0);
+  background: #000000;
   align-items: center;
   color: white;
   display: grid;
@@ -41,14 +49,15 @@ main {
   -webkit-animation: transform 4s;
           animation: transform 4s;
 }
-#acerca .salva h3 {
-  font-family: "Whisper", cursive;
-  font-size: 40px;
+#acerca .salva h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
   text-align: center;
 }
 #acerca .salva p {
   font-family: "Ubuntu", sans-serif;
   vertical-align: middle;
+  font-size: small;
   text-align: center;
   padding-left: 10px;
 }
@@ -63,41 +72,57 @@ main {
           animation: transform 9s;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
+/* -------------------ANIMACIONES---------------------------- */
+@-webkit-keyframes transform {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-
+@keyframes transform {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* ----------------------------CONTACTO------------------------------ */
-main {
-  justify-content: center;
-  align-items: center;
-  grid-area: contact;
-  display: flex;
-  justify-content: center;
+.contactanos {
+  display: grid;
+  grid-template-areas: "form datos";
   margin: 0 auto;
-  flex-direction: column;
+  max-width: 1250px;
 }
-
-#contacto {
+.contactanos #contact {
+  grid-area: form;
   font-family: "Ubuntu", sans-serif;
-  color: white;
-  width: 40%;
-  margin-top: 30px;
+  color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
   border-radius: 10px;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(29, 33, 44);
-  padding-left: 30px;
+  background-color: #0d162b;
+  padding-left: 5px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-
-input {
+.contactanos #contact input {
   background-color: #fbfbfb;
-  width: 90%;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
@@ -107,24 +132,27 @@ input {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-
-textarea {
+.contactanos #contact textarea {
   width: 90%;
 }
-
-.botonEnviar input {
+.contactanos #contact .botonEnviar input {
   text-transform: uppercase;
 }
-
-* {
-  margin: 0;
-  padding: 0%;
-  box-sizing: 0;
+.contactanos .datosContac {
+  grid-area: datos;
+  color: #bebebe;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* ----------------------------------COSTOS----------------------- */
 #costos {
-  background-color: black;
+  background-color: #000000;
   font-family: "Ubuntu", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -213,46 +241,99 @@ textarea {
   line-height: 50px;
 }
 
+/* -------------VARIABLES---------------- */
+/* ----------------------------MIXIN-------------------------- */
 /* ----------Pestañas MENU----------- */
 body {
-  background-color: black;
+  background-color: #000000;
 }
 
 .navbar {
   font-family: "Ubuntu", sans-serif;
-  background: rgb(0, 0, 0);
+  background: #000000;
   font-style: italic;
-  font-size: medium;
+  font-size: small;
 }
 .navbar ul li {
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   align-content: center;
 }
 
 /* --------------------------FOOTER---------------------------- */
 .footer {
-  font-family: "Ubuntu", sans-serif;
-  color: grey;
+  font-family: "Noto Sans", sans-serif;
+  color: #bebebe;
   font-size: small;
   font-style: italic;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(black, rgb(20, 28, 48));
+  margin-top: 50px;
 }
-.footer p a {
+.footer #redesFooter {
+  margin: 0 auto;
+}
+.footer a {
   text-decoration: none;
-  color: grey;
+  color: #ffffff;
   align-items: center;
+}
+.footer .footerplus {
+  align-items: center;
+}
+.footer .footerplus ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40 px;
+  margin-right: 40 px;
+  justify-content: center;
+  gap: 40px;
+}
+.footer .footerplus ul li {
+  list-style: none;
+}
+.footer .footerplus ul li a {
+  text-decoration: none;
+  color: #bebebe;
 }
 
 /* ---------------------------RESPONSIVE--------------------------------------- */
 @media (min-width: 300px) and (max-width: 800px) {
-  #costos {
-    grid-template-columns: 1fr;
-  }
-
   .navbar {
     font-size: small;
+  }
+
+  /* ------GALERIA------- */
+  .img-fluid:hover {
+    transform: none;
+  }
+
+  /* ------ABOUTME----- */
+  #acerca {
+    grid-template-columns: 1fr;
+  }
+  #acerca p {
+    margin: 10px;
+  }
+
+  /* ------CONTACTO----- */
+  .contactanos {
+    display: grid;
+    grid-template-areas: "form" "datos";
+  }
+  .contactanos #contact {
+    grid-area: form;
+  }
+  .contactanos .datosContac {
+    grid-area: datos;
+  }
+  .contactanos .redes {
+    display: none;
+  }
+
+  /* ------COSTOS----- */
+  #costos {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=stilos.css.map */

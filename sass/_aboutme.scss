@@ -1,12 +1,8 @@
-* {
-    margin: 0;
-    padding: 0%;
-    box-sizing: 0;
-    
-}
- /* -------------------BIO salvadordelatijera---------------- */
+@import "vars";
+
+/* -------------------BIO salvadordelatijera---------------- */
  #acerca {
-    background: rgb(0, 0, 0);
+    background: map-get($map: $color, $key: colorPrincipal);
     align-items: center;
     color: white;
     display: grid;
@@ -15,15 +11,16 @@
     .salva {
         animation: transform 4s;
        
-        h3{
-            font-family: 'Whisper', cursive;
-            font-size: 40px;
+        h1{
+            font-family: $fuenteP;
+            font-size: 22px;
             text-align: center;   
         }
         
         p {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: $fuenteP;
             vertical-align: middle;
+            font-size: small;
             text-align: center;
             padding-left: 10px;
         }
@@ -39,6 +36,20 @@
         }
     
     }
+}
 
-    
+
+
+/* -------------------ANIMACIONES---------------------------- */ 
+@keyframes transform {
+	0% {
+		opacity: 0%;
+	}
+	50% {
+		opacity: 50%;
+	}
+	100% {
+		opacity: 100%;
+	}
+
 }
