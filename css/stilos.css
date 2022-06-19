@@ -59,7 +59,7 @@ main {
   vertical-align: middle;
   font-size: small;
   text-align: center;
-  padding-left: 10px;
+  padding-left: 2px;
 }
 #acerca .fotoyo {
   justify-content: center;
@@ -313,8 +313,13 @@ body {
   #acerca {
     grid-template-columns: 1fr;
   }
-  #acerca p {
-    margin: 10px;
+  #acerca h1 {
+    font-size: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: smaller;
   }
 
   /* ------CONTACTO----- */
@@ -336,4 +341,10 @@ body {
   #costos {
     grid-template-columns: 1fr;
   }
+}
+#redesFooter {
+  align-items: center;
+}
+#redesFooter a {
+  align-items: center;
 }/*# sourceMappingURL=stilos.css.map */
