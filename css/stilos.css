@@ -51,15 +51,14 @@ main {
 }
 #acerca .salva h1 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
 }
 #acerca .salva p {
   font-family: "Ubuntu", sans-serif;
   vertical-align: middle;
-  font-size: small;
+  font-size: 13px;
   text-align: center;
-  padding-left: 2px;
 }
 #acerca .fotoyo {
   justify-content: center;
@@ -313,13 +312,13 @@ body {
   #acerca {
     grid-template-columns: 1fr;
   }
-  #acerca h1 {
-    font-size: 10px;
+  #acerca .salva h1 {
+    font-size: 15px;
   }
-
-  p {
+  #acerca .salva p {
     text-align: center;
-    font-size: smaller;
+    font-size: 11px;
+    vertical-align: baseline;
   }
 
   /* ------CONTACTO----- */
@@ -341,10 +340,4 @@ body {
   #costos {
     grid-template-columns: 1fr;
   }
-}
-#redesFooter {
-  align-items: center;
-}
-#redesFooter a {
-  align-items: center;
 }/*# sourceMappingURL=stilos.css.map */
