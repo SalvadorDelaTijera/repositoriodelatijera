@@ -94,16 +94,19 @@ body {
 
 	#acerca {
         grid-template-columns: 1fr;
+
 		.salva {
 			h1 {
 				font-size: 18px;
 			}
 			p{
+				max-width: 450px;
 				text-align: center;
 				font-size: smaller;
-				padding: 0px 10px 0px 10px;
+				vertical-align: middle;
+				
 		
-				}
+			}
 
 		}
         

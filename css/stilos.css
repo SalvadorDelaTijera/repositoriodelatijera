@@ -317,9 +317,10 @@ body {
     font-size: 18px;
   }
   #acerca .salva p {
+    max-width: 450px;
     text-align: center;
     font-size: smaller;
-    padding: 0px 10px 0px 10px;
+    vertical-align: middle;
   }
 
   /* ------CONTACTO----- */
