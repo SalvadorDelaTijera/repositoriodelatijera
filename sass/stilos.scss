@@ -100,13 +100,19 @@ body {
 				font-size: 18px;
 			}
 			p{
-				max-width: 450px;
+				max-width: 95%;
 				text-align: center;
 				font-size: smaller;
 				vertical-align: middle;
 				
 			}
 
+		}
+		.fotoyo {
+
+			img {
+				max-width: 70%;
+			}
 		}
         
     }

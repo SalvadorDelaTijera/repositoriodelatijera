@@ -317,10 +317,13 @@ body {
     font-size: 18px;
   }
   #acerca .salva p {
-    max-width: 450px;
+    max-width: 95%;
     text-align: center;
     font-size: smaller;
     vertical-align: middle;
+  }
+  #acerca .fotoyo img {
+    max-width: 70%;
   }
 
   /* ------CONTACTO----- */
