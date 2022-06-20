@@ -59,6 +59,7 @@ main {
   vertical-align: middle;
   font-size: small;
   text-align: center;
+  padding-left: 10px;
 }
 #acerca .fotoyo {
   justify-content: center;
