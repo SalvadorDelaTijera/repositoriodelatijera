@@ -57,7 +57,7 @@ main {
 #acerca .salva p {
   font-family: "Ubuntu", sans-serif;
   vertical-align: middle;
-  font-size: 13px;
+  font-size: small;
   text-align: center;
 }
 #acerca .fotoyo {
@@ -313,11 +313,12 @@ body {
     grid-template-columns: 1fr;
   }
   #acerca .salva h1 {
-    font-size: 15px;
+    font-size: 18px;
   }
   #acerca .salva p {
     text-align: center;
-    font-size: 11px;
+    font-size: smaller;
+    padding: 0px 10px 0px 10px;
   }
 
   /* ------CONTACTO----- */
