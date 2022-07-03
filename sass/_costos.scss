@@ -18,6 +18,10 @@
     
     }
     .premium { /* ------------------ premium ------------- */
-        @include sesiones(10px)
+        @include sesiones(10px);
     }
+}
+/* ---------------- MIXIN TEXTO H1 -------------------- */
+h1 {
+    @include h1;
 }

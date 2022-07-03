@@ -7,6 +7,7 @@
 
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* --------------------HOME-------------------- */
 body {
   background-color: #000000;
@@ -20,11 +21,22 @@ body {
   max-width: 100%;
 }
 
+/* Mixin Texto h1 */
+h1 {
+  color: #bebebe;
+  text-align: center;
+  font: "Ubuntu", sans-serif;
+  padding-bottom: 40px;
+}
+
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* ------------------PORTAFOLIO--------------  */
 main {
   background: #000000;
+  margin-left: 10px;
+  margin-right: 12px;
 }
 
 .img-fluid:hover {
@@ -35,8 +47,17 @@ main {
   right: 10%;
 }
 
+h1 {
+  color: #bebebe;
+  text-align: center;
+  font: "Ubuntu", sans-serif;
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* -------------------BIO salvadordelatijera---------------- */
 #acerca {
   background: #000000;
@@ -49,9 +70,9 @@ main {
   -webkit-animation: transform 4s;
           animation: transform 4s;
 }
-#acerca .salva h1 {
+#acerca .salva h6 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
+  size: 25px;
   text-align: center;
 }
 #acerca .salva p {
@@ -95,8 +116,17 @@ main {
     opacity: 100%;
   }
 }
+/* ----------------- MIXIN H1 PARA TEXTOS ------------------- */
+h1 {
+  color: #bebebe;
+  text-align: center;
+  font: "Ubuntu", sans-serif;
+  padding-bottom: 40px;
+}
+
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* ----------------------------CONTACTO------------------------------ */
 .contactanos {
   display: grid;
@@ -150,6 +180,7 @@ main {
 
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* ----------------------------------COSTOS----------------------- */
 #costos {
   background-color: #000000;
@@ -241,8 +272,17 @@ main {
   line-height: 50px;
 }
 
+/* ---------------- MIXIN TEXTO H1 -------------------- */
+h1 {
+  color: #bebebe;
+  text-align: center;
+  font: "Ubuntu", sans-serif;
+  padding-bottom: 40px;
+}
+
 /* -------------VARIABLES---------------- */
 /* ----------------------------MIXIN-------------------------- */
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
 /* ----------Pestañas MENU----------- */
 body {
   background-color: #000000;
@@ -269,7 +309,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(black, rgb(20, 28, 48));
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .footer #redesFooter {
   margin: 0 auto;
@@ -285,8 +325,8 @@ body {
 .footer .footerplus ul {
   display: flex;
   flex-direction: row;
-  margin-left: 40 px;
-  margin-right: 40 px;
+  margin-left: 20px;
+  margin-right: 40px;
   justify-content: center;
   gap: 40px;
 }
@@ -307,6 +347,9 @@ body {
   /* ------GALERIA------- */
   .img-fluid:hover {
     transform: none;
+    z-index: none;
+    top: none;
+    right: none;
   }
 
   /* ------ABOUTME----- */
@@ -344,5 +387,14 @@ body {
   /* ------COSTOS----- */
   #costos {
     grid-template-columns: 1fr;
+  }
+
+  .footerplus {
+    align-items: center;
+  }
+  .footerplus ul {
+    display: none;
+    justify-content: center;
+    gap: 5px;
   }
 }/*# sourceMappingURL=stilos.css.map */

@@ -4,6 +4,7 @@ $color: (
     colorSecundario: #0d162b,
     colorTextoP: #bebebe,
     colorTextoS:#ffffff,
+    colorTextoT:#0d162b,
 );
 
 
@@ -37,5 +38,13 @@ $fuenteS: 'Noto Sans', sans-serif;
         text-align: center;
         line-height: 50px; 
     }
+    
+}
+/* --------------- MIXIN PARA TEXTOS H1 --------------- */
+@mixin h1 {
+    color: map-get($map: $color, $key: colorTextoP);
+    text-align: center;
+    font: $fuenteP;
+    padding-bottom: 40px;
     
 }

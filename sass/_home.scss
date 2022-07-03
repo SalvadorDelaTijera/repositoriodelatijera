@@ -12,5 +12,10 @@ body {
 		max-width: 100%;
 	}
 }
+/* Mixin Texto h1 */
 
+h1 {
+
+	@include h1;
+}
 

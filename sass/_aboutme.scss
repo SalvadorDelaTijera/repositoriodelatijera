@@ -11,9 +11,9 @@
     .salva {
         animation: transform 4s;
        
-        h1{
+        h6 {
             font-family: $fuenteP;
-            font-size: 20px;
+            size: 25px;
             text-align: center;   
         }
         
@@ -52,4 +52,8 @@
 		opacity: 100%;
 	}
 
+}
+/* ----------------- MIXIN H1 PARA TEXTOS ------------------- */
+h1 {
+    @include h1;
 }

@@ -2,6 +2,9 @@
 /* ------------------PORTAFOLIO--------------  */
 main {
 	background: map-get($map: $color, $key: colorPrincipal);
+	margin-left: 10px;
+	margin-right: 12px;
+	
 }
 .img-fluid {
 	&:hover {
@@ -11,4 +14,8 @@ main {
 		top: 200%;
 		right: 10%;
 	}
+}
+h1 {
+	@include h1;
+	padding-bottom: 40px;
 }
